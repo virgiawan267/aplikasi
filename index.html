@@ -3,77 +3,529 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>Aplikasi Saya</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='assets/bootstrap/css/bootstrap.css'>
     <script src='assets/bootstrap/js/bootstrap.js'></script>
 </head>
 <body>
     <div class="container">
-        <div class="card mt-3">
+
+        <div class="card mt-3"> 
+
           <div class="row no-gutters">
-            <!--      <div class="col-md-12"> -->
-            <div class="col-md-3">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/User_font_awesome.svg/1024px-User_font_awesome.svg.png" class="rounded-circle" height="200pt" width="200pt" alt="...">
-            </div>
-            <div class="col-md-9">
-              <div class="card-body">
-                <p class="card-text" style="font-size: 14pt; margin-bottom: 0px; font-family: 'Times New Roman', Times, serif;">Nama : Virgiawan saputa</p>
-                <p class="card-text" style="font-size: 14pt; margin-bottom: 0px; font-family: 'Times New Roman', Times, serif;">NIM : 201701053</p>
-                <p class="card-text" style="font-size: 14pt; margin-bottom: 0px; font-family: 'Times New Roman', Times, serif;">Email: virgiawanputra267@gmail.com</p>
-                <p class="card-text" style="font-size: 14pt; margin-bottom: 0px; font-family: 'Times New Roman', Times, serif;">Phone :086735469876</p>
-                <p class="card-text" style="font-size: 14pt; margin-bottom: 0px; font-family: 'Times New Roman', Times, serif;">Alamat : Desa Kroya RT 02 / RW 01</p>
+
+        <!--      <div class="col-md-12"> -->
+
+              <div class="col-md-3">
+
+               <img src="https://lh3.googleusercontent.com/proxy/sSWZKMMfgfxcZx7AvvQ6hA-NTAM-rvfT0H78k5VLw704cUSvCKZfXgzySJGegYRyUgUoBpE7hehmY45yNGuAamKQJdSO7_wN" class="rounded-circle" height="170pt" width="170pt" alt="...">
+
+              </div>
+
+      <meta charset="utf-8">
+
+          <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    
+
+          <link rel="stylesheet" href="aset/bootstrap/css/bootstrap.min.css" 
+
+          type="text/css"/> 
+
+          <link rel="stylesheet" href="aset/fontawesome/css/all.css" type="text/css"/>
+
+          <script type="text/javascript" src="js/jquery.js"></script>
+
+          <script type="text/javascript" src="js/bootstrap.js"></script>
+
+      </head>
+
+          <body>
+
+            <style type="text/css">
+
+              .satu {
+
+              font-size: 24pt;
+
+              }
+
+              .dua {
+
+              font-size: 16pt;
+
+              }
+
+           </style>
+
+              
+
+                  </p>
+
+                      <div class="col-md-8 text-black rounded m-2"> <!-- kolom kedua berisi profil singkat -->
+
+                          <p class="dua text-left mt-4">
+
+                             Nama : Virgiawan Saputra
+
+                          </p>
+
+                        <p class="dua text-left mt-4">
+
+                             NIM : 201701053
+
+                          </p>
+
+                          <p class="dua text-left">
+
+                            Email : virgiawanputra267@gmail.com
+
+                          </p>
+
+                          <p class="dua text-left">
+
+                            Phone :  08140350581
+
+                          </p>  
+
+                        <p class="dua text-left">
+
+                            Alamat : Jl Mataram, Kroya
+
+                          </p>
+
+                
+
+              </div>
+
+      <div class="card-group">
+
+        <div class="card">
+
+          
+
+          <div class="card-body">
+
+            <center> <h5 class="card-title">Nilai Rata-rata Ujian</h5></center>
+
+            <p class="card-text">
+
+            <div id="tulis1"></div> 
+
+            <div id="tulis2"></div>
+
+            <div id="praktek"></div><br>
+
+            <h3><div id="nilaiujian"></div></h3>
+
+            </p>
+
+          
+
+           
+
+          </div>
+
+        </div>
+
+        <div class="card">
+
+          
+
+          <div class="card-body">
+
+            <center> <h5 class="card-title">Score Toefl</h5> </center>
+
+            <p class="card-text">
+
+           <center> <h3><div id="toefl1"></div></h3> </center>
+
+           <center> <div id="toefl"></div></p>
+
+            </center>
+
+            
+
+          </div>
+
+        </div>
+
+        <div class="card">
+
+          
+
+          <div class="card-body">
+
+           <center> <h5 class="card-title">Status Beasiswa</h5> </center>
+
+            <p class="card-text">
+
+              <center> <div id="beasiswa"></div> </p> </center>
+
+          <center> <h5><div id="nilai"></div></h5> </center>
+
       
-              </div>
-            </div>
-            <!--      </div> -->
+
           </div>
+
         </div>
-        <div class="card mt-3">
-          <div class="row no-gutters">
-            <!--      <div class="col-md-12"> -->
-            <div class="col-md-4 border border-primary">
-              <div class="card-body">
-                <p class="card-text text-center" style="font-size: 15pt; margin-bottom: 0px; font-family: 'Times New Roman', Times, serif;">Nilai Rata Rata Ujian</p>
-                <div class="row">
-                  <div class="col-md-6">
-                    <div id="nilai_tertulis"></div>
-                  </div>
-                  <div class="col-md-6">
-                    <div id="nilai_praktek"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 border border-primary">
-              <div class="card-body">
-                <p class="card-text text-center" style="font-size: 15pt; margin-bottom: 0px; font-family: 'Times New Roman', Times, serif;">Skor Toefl</p>
-                <div class="row">
-                  <div class="col-md-12">
-                    <div id="nilai_toefl" class="text-center" style="font-size: 20pt; font-family: 'Times New Roman', Times, serif;"></div>
-                  </div>
-                  <div class="col-md-12">
-                    <div id="na_toefl" class="text-center" style="font-size: 10pt; font-family: 'Times New Roman', Times, serif;"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 border border-primary">
-              <div class="card-body">
-                <p class="card-text text-center" style="font-size: 15pt; margin-bottom: 0px; font-family: 'Times New Roman', Times, serif;">Status Beasiswa</p>
-                <div class="row">
-                  <div class="col-md-12">
-                    <div id="status_beasiswa" class="text-center" style="font-size: 10pt; font-family: 'Times New Roman', Times, serif;"></div>
-                  </div>
-                  <div class="col-md-12">
-                    <div id="na_avg" class="text-center" style="font-size: 10pt; font-family: 'Times New Roman', Times, serif;"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--      </div> -->
-          </div>
-        </div>
+
       </div>
+
+
+
+      <script>
+
+          var ujiantulis1= document.getElementById("tulis1");
+
+var ujiantulis2 = document.getElementById("tulis2");
+
+var ujianpraktek = document.getElementById("praktek");
+
+var hasilujian  = document.getElementById("nilaiujian");
+
+
+
+var tulis1 = 95;
+
+var tulis2 = 95;
+
+var praktek = 95;
+
+var nilaiujian = (tulis1 + tulis2 + praktek) / 3;
+
+
+
+ujiantulis1.innerHTML = "Nilai Ujian Tulis 1 : " + tulis1;
+
+ujiantulis2.innerHTML = "Nilai Ujian Tulis 2 : " + tulis2;
+
+ujianpraktek.innerHTML = "Nilai Ujian Praktek : " + praktek;
+
+hasilujian.innerHTML = "Nilai Rata-rata Ujian : " + nilaiujian;
+
+
+
+
+
+var nilaitoefl= document.getElementById("toefl");
+
+var scoretoefl= document.getElementById("toefl1");
+
+var toefl = 480;
+
+var toefl1 = 480;
+
+
+
+
+
+if(toefl >= 500){
+
+ nilaitoefl.innerHTML = "Nilai 100";
+
+}
+
+else if(toefl > 450){
+
+  nilaitoefl.innerHTML = "Nilai 80";
+
+}
+
+else if(toefl < 450){
+
+  nilaitoefl.innerHTML = "Nilai 50";
+
+}
+
+
+
+scoretoefl.innerHTML = "Score : " + toefl1;
+
+
+
+var statusbeasiswa= document.getElementById("beasiswa");
+
+
+
+var nilaitoefl = 80;
+
+var beasiswa = (nilaiujian + nilaitoefl) / 2;
+
+
+
+var statusbsw= document.getElementById("nilai");
+
+
+
+var nilai= 80 
+
+if(nilai >= 90){
+
+ statusbsw.innerHTML = "LULUS";
+
+}
+
+else if(nilai < 90){
+
+  statusbsw.innerHTML = "TIDAK LULUS";
+
+}
+
+statusbeasiswa.innerHTML = "Nilai : " + beasiswa;
+
+
+
+
+function refreshPage() {
+
+  window.location.href = window.location.href;
+
+}
+
+</script>
+
+
+
+<style>
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+body {
+
+  background: #f1f1f1 none repeat scroll top left;
+
+  font-family: 'Open Sans', sans-serif;
+
+  margin: 0;
+
+  padding: 0;
+
+  position: relative;
+
+  line-height: normal;
+
+}
+
+
+
+a,
+
+a:visited {
+
+  color: #555;
+
+  outline: none;
+
+  text-decoration: none;
+
+}
+
+
+
+a:hover,
+
+a:focus,
+
+a:visited:hover {
+
+  color: #22a1c4;
+
+  text-decoration: none;
+
+}
+
+
+
+.container {
+
+  max-width: 768px;
+
+  margin: 1% auto;
+
+  padding: 30px;
+
+  background: #fff;
+
+  color: #95a5a6;
+
+  font-family: 'Open Sans', sans-serif;
+
+  font-size: 1em;
+
+  line-height: normal;
+
+}
+
+
+
+.container h1,
+
+.container h2 {
+
+  display: block;
+
+  text-align: center;
+
+  margin-bottom: 30px;
+
+  font-size: 2em;
+
+  font-weight: 700;
+
+  color: #336699;
+
+}
+
+
+
+.container h2 {
+
+  margin-top: 30px;
+
+}
+
+.container h3 {
+
+  text-align:center;
+
+}
+
+.container input {
+
+  margin: 30px auto;
+
+  text-align:center;
+
+  display:table;
+
+  padding:10px 15px;
+
+  font-size:16px;
+
+  background:#8092e9;
+
+  color:#fff;
+
+  border:0;
+
+  border-radius:1px;
+
+  cursor:pointer;
+
+  transition:all .3s
+
+}
+
+.container input:hover,.container input:active {
+
+  background:#3c5aeb;
+
+  color:#fff;
+
+  outline:none
+
+}
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+body {
+
+  background: #f1f1f1 none repeat scroll top left;
+
+  font-family: 'Open Sans', sans-serif;
+
+  margin: 0;
+
+  padding: 0;
+
+  position: relative;
+
+  line-height: normal;
+
+}
+
+
+
+a,
+
+a:visited {
+
+  color: #555;
+
+  outline: none;
+
+  text-decoration: none;
+
+}
+
+
+
+a:hover,
+
+a:focus,
+
+a:visited:hover {
+
+  color: #22a1c4;
+
+  text-decoration: none;
+
+}
+
+
+
+.container {
+
+  max-width: 768px;
+
+  margin: 1% auto;
+
+  padding: 30px;
+
+  background: #fff;
+
+  color: #95a5a6;
+
+  font-family: 'Open Sans', sans-serif;
+
+  font-size: 1em;
+
+  line-height: normal;
+
+}
+
+
+
+.container h1,
+
+.container h2 {
+
+  display: block;
+
+  text-align: center;
+
+  margin-bottom: 30px;
+
+  font-size: 2em;
+
+  font-weight: 700;
+
+  color: #336699;
+
+}
+
+
+
+.container h2 {
+
+  margin-top: 30px;
+
+}
+
+</style>
+
+
 </body>
 </html>
